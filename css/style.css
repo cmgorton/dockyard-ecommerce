@@ -6,7 +6,7 @@
   --color-white: #fff;
   --color-light-green: #dadfd2;
   --color-medium-green: #146e4d;
-  --color-dark-green: #0B5439;
+  --color-dark-green: #0b5439;
   --main-bg-color: #edede8;
 
   /* GRAYS */
@@ -60,9 +60,6 @@ section {
   display: block;
 }
 
-body {
-  line-height: 1;
-}
 button {
   border: 0;
   border-radius: 0;
@@ -95,9 +92,10 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-size: 1.6rem;
+  line-height: 1;
   background: var(--main-bg-color);
   border: 1.8rem solid white;
-  font-family: 'Proza Libre', sans-serif;
+  font-family: "Proza Libre", sans-serif;
 }
 
 a {
@@ -119,8 +117,9 @@ hr {
 }
 
 /*********** Main Content *****************/
-a, .social__icons {
-    cursor: pointer;
+a,
+.social__icons {
+  cursor: pointer;
 }
 .l-container {
   max-width: 1500px;
@@ -131,7 +130,6 @@ a, .social__icons {
 header {
   max-width: 1379px;
   margin: 0 auto;
-  
 }
 .header__logo {
   margin: 2.8rem 0;
@@ -167,7 +165,7 @@ header {
   justify-self: start;
 }
 .c-card__title {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 5.6rem;
   font-weight: var(--weight-regular);
   margin: 2rem 0 auto auto;
@@ -190,7 +188,7 @@ header {
   border-bottom: 1px dashed var(--color-gray-3);
 }
 .c-card__cost {
-    color: #4A4A4A;
+  color: #4a4a4a;
 }
 .c-card__button-wrap {
   margin: 3.5rem 0;
@@ -199,20 +197,20 @@ header {
   align-items: center;
 }
 .icons {
-    margin: 0 auto auto 1rem;
-    fill: var(--color-gray-4);
-    transition: all 0.2s cubic-bezier(0, 0, 0.5, 1);  
+  margin: 0 auto auto 1rem;
+  fill: var(--color-gray-4);
+  transition: all 0.2s cubic-bezier(0, 0, 0.5, 1);
 }
 
 .icons:hover {
-    fill: var(--color-gray-2);
+  fill: var(--color-gray-2);
 }
 
 .button {
   background: var(--color-light-green);
   color: var(--color-dark-green);
   font-size: 14px;
-  font-weight: var(--weight-bold);;
+  font-weight: var(--weight-bold);
   max-width: 190px;
   width: 100%;
   padding: 20px 40px;
@@ -233,8 +231,8 @@ header {
   .header__logo {
     text-align: center;
   }
-  .header-logo svg {
-    transform: scale(.75);
+  .site-logo {
+    transform: scale(0.75);
   }
   .c-card {
     grid-column-gap: 20px;
