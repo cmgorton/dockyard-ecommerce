@@ -1,0 +1,11 @@
+<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+  <g id="Page-1" fill="none" fill-rule="evenodd">
+    <g id="Market-desktop" transform="translate(-1200 -462)" fill="#767673" fill-rule="nonzero">
+      <g id="Item-1" transform="translate(170 170)">
+        <g id="social" transform="translate(1030 292)">
+          <path d="M18.897 0H1.103C.494 0 0 .494 0 1.103v17.794C0 19.507.494 20 1.103 20h9.579v-7.745H8.074V9.237h2.608V7.009c0-2.582 1.578-3.987 3.882-3.987 1.104 0 2.053.08 2.33.117v2.7h-1.6c-1.25 0-1.494.601-1.494 1.476V9.24h2.987l-.388 3.025H13.8V20h5.096c.61 0 1.104-.493 1.104-1.103V1.103C20 .494 19.507 0 18.897 0" id="Shape"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

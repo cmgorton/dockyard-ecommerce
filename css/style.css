@@ -1,0 +1,263 @@
+/*********** Variables *****************/
+:root {
+  font-size: 62.5%;
+  /* BASE COLORS */
+  --color-black: #000;
+  --color-white: #fff;
+  --color-light-green: #dadfd2;
+  --color-medium-green: #146e4d;
+  --color-dark-green: #0B5439;
+  --main-bg-color: #edede8;
+
+  /* GRAYS */
+  --color-gray-1: #cfcfcb;
+  --color-gray-2: #5b5b5b;
+  --color-gray-3: #4a4a4a;
+  --color-gray-4: #767673;
+
+  /* FONT WEIGHT */
+  --weight-regular: 400;
+  --weight-bold: 600;
+}
+
+/*********** Universal Styles *****************/
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+article,
+aside,
+figure,
+figcaption,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+button {
+  border: 0;
+  border-radius: 0;
+  outline: none;
+  appearance: none;
+  background: transparent;
+}
+
+textarea {
+  min-height: 8.5em;
+}
+
+select,
+button {
+  line-height: 1em;
+  cursor: pointer;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  background: var(--main-bg-color);
+  border: 1.8rem solid white;
+  font-family: 'Proza Libre', sans-serif;
+}
+
+a {
+  color: var(--color-medium-green);
+  text-decoration: none;
+  padding-bottom: 0.5rem;
+  transition: all 0.2s cubic-bezier(0, 0, 0.5, 1);
+}
+
+a:hover {
+  color: var(--color-dark-green);
+}
+
+hr {
+  background-color: var(--color-gray-1);
+  border: none;
+  height: 1px;
+  max-width: 1361px;
+}
+
+/*********** Main Content *****************/
+a, .social__icons {
+    cursor: pointer;
+}
+.l-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 1.8rem;
+  margin: 5rem 7rem;
+}
+header {
+  max-width: 1379px;
+  margin: 0 auto;
+  
+}
+.header__logo {
+  margin: 2.8rem 0;
+}
+
+.c-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "img title"
+    "img   bd"
+    "img   bd";
+  grid-gap: 2rem;
+  justify-items: center;
+  margin: 5rem 0;
+}
+.c-card__date {
+  font-size: 1.4rem;
+  font-weight: var(--weight-bold);
+  letter-spacing: 1px;
+  color: var(--color-gray-2);
+  margin: 0;
+}
+.c-card__img-wrap {
+  grid-area: img;
+}
+.c-card__img {
+  max-width: 644px;
+  width: 100%;
+}
+.c-card__title-wrap {
+  grid-area: title;
+  justify-self: start;
+}
+.c-card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5.6rem;
+  font-weight: var(--weight-regular);
+  margin: 2rem 0 auto auto;
+  letter-spacing: 2px;
+}
+.c-card_content {
+  max-width: 414px;
+  grid-area: bd;
+  justify-self: start;
+}
+.c-card__text {
+  line-height: 2;
+  color: var(--color-gray-2);
+}
+.c-card__social-wrap {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 3.5rem;
+  border-bottom: 1px dashed var(--color-gray-3);
+}
+.c-card__cost {
+    color: #4A4A4A;
+}
+.c-card__button-wrap {
+  margin: 3.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.icons {
+    margin: 0 auto auto 1rem;
+    fill: var(--color-gray-4);
+    transition: all 0.2s cubic-bezier(0, 0, 0.5, 1);  
+}
+
+.icons:hover {
+    fill: var(--color-gray-2);
+}
+
+.button {
+  background: var(--color-light-green);
+  color: var(--color-dark-green);
+  font-size: 14px;
+  font-weight: var(--weight-bold);;
+  max-width: 190px;
+  width: 100%;
+  padding: 20px 40px;
+  transition: all 0.2s cubic-bezier(0, 0, 0.5, 1);
+  margin: 0 0 0 1.5rem;
+  align-self: flex-end;
+  white-space: nowrap;
+  letter-spacing: 2px;
+}
+.button:hover {
+  background: var(--color-dark-green);
+  color: var(--color-light-green);
+}
+@media (max-width: 800px) {
+  .l-container {
+    margin: 0rem;
+  }
+  .header__logo {
+    text-align: center;
+  }
+  .header-logo svg {
+    transform: scale(.75);
+  }
+  .c-card {
+    grid-column-gap: 20px;
+    grid-template-areas:
+      "title title"
+      "img img "
+      " bd bd";
+  }
+  .c-card__social-wrap {
+    flex-wrap: wrap;
+  }
+  .social__link {
+    flex: 100%;
+    margin: 1rem 0;
+  }
+  .c-card__title {
+    font-size: 3.6rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 300px) {
+  body {
+    border: 0px;
+  }
+}
